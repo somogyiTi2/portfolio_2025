@@ -1,0 +1,21 @@
+body{
+    margin:0px
+}
+
+:root {
+    transition: background 0.3s ease, color 0.3s ease;
+    /*Default:*/
+    background-color: #1e1e1e;
+    color: #f8f8f8;
+  }
+  
+  :root.light {
+    background-color: #ffdfdf;
+    color: #3a3a3a;
+  }
+  
+  :root.dark {
+    background-color: #1e1e1e;
+    color: #f8f8f8;
+  }
+  

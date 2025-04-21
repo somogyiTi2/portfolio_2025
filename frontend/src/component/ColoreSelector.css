@@ -1,0 +1,13 @@
+button {
+    font-size: 15px;
+    transition: font-size 0.3s ease, background-color 0.3s ease;
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    font-size: 20px;
+}
+
+
