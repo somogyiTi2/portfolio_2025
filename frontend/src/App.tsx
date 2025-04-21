@@ -1,6 +1,7 @@
 import './App.css'
 import Hero from './component/Hero'
 import Navbar from './component/Navbar'
+import StarBackground from './component/StarBackground'
 import { ThemeProvider } from './store/ThemeContext'
 
 function App() {
@@ -10,7 +11,9 @@ function App() {
     <ThemeProvider>
       <Navbar />
       <section id="me">
-        <Hero />
+        <StarBackground>
+          <Hero />
+        </StarBackground>
       </section>
       <section id="page2">
         <h1>Hello</h1>

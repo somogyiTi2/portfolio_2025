@@ -1,0 +1,136 @@
+.childrenStar {
+    position: relative;
+    z-index: 1;
+}
+
+.starbackground  {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    transition: background-color 1s ease;
+}
+
+.starbackground.light {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgb(0, 42, 55));
+    background-color:#b26fbf;
+}
+
+.starbackground.dark {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgb(0, 42, 55));
+    background-color:black;
+}
+
+
+.star {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: repeat;
+    background-size: 200px 200px;
+    opacity: 0.8;
+    animation-name: twinkle, moveStars;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    pointer-events: none;
+}
+
+.star1 {
+    background-image:
+        radial-gradient(1px 1px at 25px 5px, #fff, transparent),
+        radial-gradient(1px 1px at 50px 25px, #fff, transparent),
+        radial-gradient(1px 1px at 125px 20px, #fff, transparent);
+    animation-duration: 3s, 60s;
+}
+
+.star2 {
+    background-image:
+        radial-gradient(2px 2px at 50px 75px, #fff, transparent),
+        radial-gradient(1.5px 1.5px at 15px 125px, #68f3fd, transparent),
+        radial-gradient(2px 2px at 110px 80px, #fff, transparent);
+    animation-duration: 5s, 90s;
+}
+
+.star3 {
+    background-image:
+        radial-gradient(0.8px 0.8px at 100px 100px, #fff, transparent),
+        radial-gradient(1.2px 1.2px at 180px 40px, #fff, transparent),
+        radial-gradient(1px 1px at 90px 150px, #fff, transparent);
+    animation-duration: 2s, 120s;
+}
+
+@keyframes twinkle {
+
+    0%,
+    100% {
+        opacity: 0.2;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+
+
+/**shhoting star**/
+.shooting-star {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: linear-gradient(-45deg, white, rgba(255, 255, 255, 0));
+    opacity: 0;
+    animation: animStar 3s ease-in-out infinite;
+    z-index: 0;
+}
+
+/* Egyedi pozíció és delay minden hullócsillagnak */
+
+.shooting-star:nth-child(1) {
+    top: -20px;
+    left: 10vw;
+    animation-delay: 2s;
+}
+
+.shooting-star:nth-child(2) {
+    top: -100px;
+    left: 40vw;
+    animation-delay: 5s;
+}
+
+.shooting-star:nth-child(3) {
+    top: -50px;
+    left: 70vw;
+    animation-delay: 8s;
+}
+
+.shooting-star:nth-child(4) {
+    top: -120px;
+    left: 20vw;
+    animation-delay: 11s;
+}
+
+.shooting-star:nth-child(5) {
+    top: -80px;
+    left: 90vw;
+    animation-delay: 15s;
+}
+
+@keyframes animStar {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-500px, 1000px);
+        opacity: 0;
+    }
+}

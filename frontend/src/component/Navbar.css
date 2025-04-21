@@ -12,12 +12,13 @@ nav {
     justify-content: space-between;
     z-index: 10;
     height: auto;
+    transition: background-color 1s ease;
 }
 
 nav.dark {
-    background: rgb(255, 255, 255, 0.5)
+    background-color: rgba(124, 124, 124, 0.137)
 }
 
 nav.light {
-    background: rgb(0, 0, 0, 0.5);
+    background-color: rgba(71, 71, 71, 0.24)
 }
