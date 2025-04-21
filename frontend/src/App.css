@@ -1,0 +1,16 @@
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    scroll-snap-align: start;
+}
+
+section:nth-child(1) {
+    background: #ffadad;
+}
+
+section:nth-child(2) {
+    background: #ffd6a5;
+}

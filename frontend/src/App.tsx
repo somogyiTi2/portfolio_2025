@@ -9,7 +9,12 @@ function App() {
   return (
     <ThemeProvider>
       <Navbar />
-      <Hero />
+      <section id="me">
+        <Hero />
+      </section>
+      <section id="page2">
+        <h1>Hello</h1>
+      </section>
     </ThemeProvider>
   )
 }

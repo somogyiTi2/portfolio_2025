@@ -1,0 +1,23 @@
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+    height: auto;
+}
+
+nav.dark {
+    background: rgb(255, 255, 255, 0.5)
+}
+
+nav.light {
+    background: rgb(0, 0, 0, 0.5);
+}
