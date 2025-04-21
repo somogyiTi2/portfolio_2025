@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import '../i18n';
+import MeSVG from './MeSVG';
 
 
 
@@ -9,6 +10,7 @@ const Hero = () => {
     
     return (
         <div>
+            <MeSVG/>
             <h1>{t('welcome')}</h1>
         </div>
     );

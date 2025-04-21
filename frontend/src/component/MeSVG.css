@@ -1,0 +1,22 @@
+.svg-gradient {
+    width: 300px;
+    height: 300px;
+  }
+
+  .svg-gradient.light {
+    background: linear-gradient(
+      141deg,
+      rgb(228, 140, 9) 0%,
+      rgb(248, 195, 97) 35%,
+      rgb(165, 165, 165) 100%
+    );
+  }
+  
+  .svg-gradient.dark {
+    background: linear-gradient(
+      141deg,
+      rgba(42, 123, 155, 1) 0%,
+      rgba(87, 199, 133, 1) 35%,
+      rgba(237, 221, 83, 1) 100%
+    );
+  }
