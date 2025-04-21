@@ -1,0 +1,3 @@
+# Intall
+
+# npm i
