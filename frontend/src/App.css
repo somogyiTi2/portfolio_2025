@@ -3,7 +3,6 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 3rem;
     scroll-snap-align: start;
 }
 
@@ -14,3 +13,7 @@ section:nth-child(1) {
 section:nth-child(2) {
     background: #ffd6a5;
 }
+
+@media only screen and (min-width: 2560px) {
+    :root {font-size:1.8rem}
+  }

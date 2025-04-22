@@ -1,18 +1,19 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
-import '../i18n';
 import MeSVG from './MeSVG';
 import './Hero.css'
+import { useTheme } from '../store/ThemeContext';
+import Code from './Code';
 
 
 
 const Hero = () => {
-    const { t } = useTranslation();
-
+    const { theme } = useTheme();
     return (
         <div className='parent'>
             <div className='div1'>
-                <h1>{t('welcome')}</h1>
+                <div className={`rombus ${theme}`}>
+                <Code/>
+                </div>
             </div>
             <div className='div2'>
                 <MeSVG />

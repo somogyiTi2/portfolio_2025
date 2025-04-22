@@ -1,4 +1,4 @@
 {
   "welcome": "Üdvözöllek",
-  "toggle_language": "Váltás angolra"
+  "portfolioCode":"// Portfolio Site\n\nconst name: string[] = ['Somogyi', 'Tibor'];\nconst job: string = 'Software Engineer';\nlet Frameworks: string[] = ['React.js', 'Next.js'];\nlet languages = [\n  { short: 'hu', long: 'Hungarian', level: 'C2' },\n  { short: 'en', long: 'English', level: 'B1-B2' }\n];\nconst [learning, setLearning] = useState<string>('React.ts');\n // TODO: make better"
 }
