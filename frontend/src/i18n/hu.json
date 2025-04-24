@@ -1,4 +1,105 @@
 {
   "welcome": "Üdvözöllek",
-  "portfolioCode":"// Portfolio Site\n\nconst name: string[] = ['Somogyi', 'Tibor'];\nconst job: string = 'Software Engineer';\nlet Frameworks: string[] = ['React.js', 'Next.js'];\nlet languages = [\n  { short: 'hu', long: 'Hungarian', level: 'C2' },\n  { short: 'en', long: 'English', level: 'B1-B2' }\n];\nconst [learning, setLearning] = useState<string>('React.ts');\n // TODO: make better"
+  "portfolioCode":"// Portfolio Site\n\nconst name: string[] = ['Somogyi', 'Tibor'];\nconst job: string = 'Software Engineer';\nlet Frameworks: string[] = ['React.js', 'Next.js'];\nlet languages = [\n  { short: 'hu', long: 'Hungarian', level: 'C2' },\n  { short: 'en', long: 'English', level: 'B1-B2' }\n];\nconst [learning, setLearning] = useState<string>('React.ts');\n // TODO: make better",
+  "experiencesSelector": [
+    {"title":"Minden", "value":"all"},
+    {"title":"Tapasztalat", "value":"experience"},
+    {"title":"Képzés", "value":"certificate"}
+  ],
+  "expericences-title":"Tapasztalatok és tanulmányok",
+  "experiences":[
+    {
+      "id": 1,
+      "title": "Graduation certificate",
+      "image": "https://www.svgrepo.com/show/87194/diploma.svg",
+      "year": "2016",
+      "categorie": "certificate"
+    },
+    {
+      "id": 2,
+      "title": "I-Code",
+      "description": "Linux, HTML, CSS, WordPress, PHP",
+      "image": "https://lh3.googleusercontent.com/a-/AD_cMMTZ-MAJVy0_BafvySa0JXO5cSQCsXedOkGACQNN=w60-h60-p-rp-mo-br100",
+      "year": "2018-2019",
+      "categorie": "experience"
+    },
+    {
+      "id": 3,
+      "title": "Gábor Dénes University",
+      "description": "BSc | Computer Engineer",
+      "year": "2016-2020",
+      "image": "https://gde.hu/img/GDE_logo.png",
+      "link": "https://drive.google.com/file/d/10sd__T1ZamhxhcB5Va9Uaenbg1XP4gG1/view?usp=sharing",
+      "categorie": "certificate"
+    },
+    {
+      "id": 4,
+      "title": "COLIBRI-PRINT Press preparer",
+      "description": "Adobe Photoshop, Adobe Illustrator",
+      "image": "https://colibriprint.hu/wp-content/uploads/2022/10/web-logo-colibriprint.png",
+      "year": "2021-2022",
+      "categorie": "experience"
+    },
+    {
+      "id": 5,
+      "title": "Udemy: The Complete 2023 Web Development Bootcamp",
+      "image": "https://seeklogo.com/images/U/udemy-logo-5315F166A4-seeklogo.com.png",
+      "description": "HTML, CSS, JS, jQuery, Git, Node.js, MongoDB",
+      "link": "https://www.udemy.com/certificate/UC-cb61b73c-5805-4d1a-a00f-e423b5681718/",
+      "year": "2021-2022",
+      "categorie": "certificate"
+    },
+    {
+      "id": 6,
+      "title": "Országos Meteorológiai Szolgálat",
+      "image": "https://www.met.hu/images/logo/omsz_logo_1362x492_300dpi.png",
+      "description": "HTML, CSS, PHP, MySQL, JQuery, Bootstrap",
+      "year": "2021-2022",
+      "categorie": "experience"
+    },
+    {
+      "id": 7,
+      "title": "All You Can Move (MBSM)",
+      "image": "https://www.visa.com/images/merchantoffers/2022-03/1647850408695.aycm-logo-400x300.jpeg",
+      "description": "HTML, CSS, JS, React",
+      "year": "2022",
+      "categorie": "experience"
+    },
+    {
+      "id": 8,
+      "title": "Udemy:  React - The Complete Guide",
+      "image": "https://seeklogo.com/images/U/udemy-logo-5315F166A4-seeklogo.com.png",
+      "description": "React, Redux, Redux Toolkit, Next.js",
+      "link": "https://www.udemy.com/certificate/UC-cb61b73c-5805-4d1a-a00f-e423b5681718/",
+      "year": "2022-2023",
+      "categorie": "certificate"
+    },
+    {
+      "id": 9,
+      "title": "Új Világ",
+      "image": "https://www.digitalevolution.hu/pic/upload/uvl.png",
+      "description": "React, Redux (Redux SAGA), Next.js, Nest.js, Git, SCSS (SASS), TypeScript, Yarn, Syncfusion",
+      "year": "2023-2024",
+      "categorie": "experience"
+    },
+    {
+      "id": 10,
+      "title": "Udemy: Typescipt Basic",
+      "image": "https://seeklogo.com/images/U/udemy-logo-5315F166A4-seeklogo.com.png",
+      "description": "TypeScript",
+      "link": "https://www.udemy.com/certificate/UC-505a74a5-c9e2-43f5-8ea4-f8c6d2d8a126/",
+      "year": "2023",
+      "categorie": "certificate"
+    },
+    {
+      "id": 11,
+      "title": "Udemy: React & Typescipt - The Practical Guide",
+      "image": "https://seeklogo.com/images/U/udemy-logo-5315F166A4-seeklogo.com.png",
+      "description": "TypeScript",
+      "link": "https://www.udemy.com/certificate/UC-7f641047-c667-4eb4-9234-7ab83aa0de07/",
+      "year": "2025",
+      "categorie": "certificate"
+    }
+  ]
+  
 }

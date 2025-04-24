@@ -10,7 +10,8 @@ const Navbar = () => {
     return (
         <nav className={`nav ${theme}`} >
             <a href="#me">Me</a>
-            <a href="#page2">Munkák</a>
+            <a href="#timeline">Munkák</a>
+            <a href="#portfolio">Portfólió</a>
             <div>
                 <ColoreSelector />
                 <LanguageSelector />

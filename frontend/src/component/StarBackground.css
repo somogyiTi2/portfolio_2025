@@ -88,7 +88,6 @@
 }
 
 /* Egyedi pozíció és delay minden hullócsillagnak */
-
 .shooting-star:nth-child(1) {
     top: -20px;
     left: 10vw;

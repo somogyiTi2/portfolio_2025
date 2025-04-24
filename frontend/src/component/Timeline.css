@@ -1,0 +1,184 @@
+.experience-page {
+    transition: background-color 3s ease;
+    height: 50vh;
+    width: 100%;
+}
+
+.experience-page.dark {
+    background-color: #002a37
+}
+
+.experience-page.light {
+    background-color: #59375f
+}
+
+.timeline-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.selector-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.selector-wrapper button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 90px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+.selector-wrapper.light button {
+    background: #f0f0f0;
+    color: rgb(0, 0, 0);
+}
+
+.selector-wrapper.dark button {
+    background: #000000;
+    color: white;
+}
+
+.selector-wrapper button.active {
+    background: #007bff;
+    color: white;
+}
+
+.timeline-title {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.timeline {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 20px;
+    scrollbar-width: thin;
+    scrollbar-color: #007bff #f0f0f0;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+
+.timeline::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    border-radius: 4px;
+}
+
+.timeline::-webkit-scrollbar-thumb {
+    background: #007bff;
+    border-radius: 4px;
+}
+
+.timeline-item {
+    flex: 0 0 auto;
+    width: 300px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    padding: 20px;
+    transition: background-color 0.5s ease;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+  
+}
+
+.timeline-item.light{
+    background: white;
+}
+.timeline-item.dark{
+    background: rgb(0, 0, 0);
+}
+
+.haveLink.light:hover {
+    background-color: #cccccc;
+    cursor: url('/mouseCursorLight.png'), pointer;
+}
+
+.haveLink.dark:hover {
+    background-color: #b1b1b1;
+    cursor: url('/mouseCursorDark.png'), pointer;
+}
+
+.content {
+    text-align: center;
+}
+
+.content img {
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.content h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+.content p {
+    font-size: 1rem;
+    color: #666;
+    overflow-wrap: break-word;
+    white-space: normal;
+    margin: 0;
+    padding: 0 10px;
+}
+
+
+@media (max-width: 1214px) {
+    .timeline-container {
+        padding: 10px;
+    }
+
+    .timeline {
+        max-width: 100%;
+        overflow-x: auto;
+    }
+
+    .timeline-item {
+        width: calc(100vw - 60px);
+        max-width: 280px;
+        margin-right: 15px;
+    }
+
+    .timeline-item:not(:last-child)::after {
+        right: -7px;
+        width: 15px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .timeline-item {
+        width: calc(100vw - 40px);
+        max-width: 250px;
+    }
+
+    .timeline-item:not(:last-child)::after {
+        right: -5px;
+        width: 10px;
+    }
+
+    .selector-wrapper button {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    .timeline-title {
+        font-size: 1.5rem;
+    }
+}

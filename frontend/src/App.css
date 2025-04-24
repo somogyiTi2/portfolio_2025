@@ -6,14 +6,7 @@ section {
     scroll-snap-align: start;
 }
 
-section:nth-child(1) {
-    background: #ffadad;
-}
+#timeline{
 
-section:nth-child(2) {
-    background: #ffd6a5;
+    height: 50vh;
 }
-
-@media only screen and (min-width: 2560px) {
-    :root {font-size:1.8rem}
-  }
