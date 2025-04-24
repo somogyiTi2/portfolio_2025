@@ -4,13 +4,15 @@
     width: 100%;
 }
 
+.experience-page.light {
+    background: rgb(228, 140, 9)
+}
+
 .experience-page.dark {
     background-color: #002a37
 }
 
-.experience-page.light {
-    background-color: #59375f
-}
+
 
 .timeline-container {
     max-width: 100%;
@@ -37,6 +39,7 @@
     cursor: pointer;
     transition: background-color 0.5s ease;
 }
+
 .selector-wrapper.light button {
     background: #f0f0f0;
     color: rgb(0, 0, 0);
@@ -94,13 +97,14 @@
     display: inline-block;
     vertical-align: top;
     box-sizing: border-box;
-  
+
 }
 
-.timeline-item.light{
+.timeline-item.light {
     background: white;
 }
-.timeline-item.dark{
+
+.timeline-item.dark {
     background: rgb(0, 0, 0);
 }
 

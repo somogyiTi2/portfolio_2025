@@ -1,0 +1,43 @@
+.code-background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: background-color 3s ease;
+    overflow: hidden;
+    font-family: 'Courier New', monospace;
+}
+
+.code-background.light {
+    background-color: #855f8d
+}
+
+.code-background.dark {
+    background: #202020;
+}
+
+.term {
+    font-size: 24px;
+    font-weight: bold;
+    opacity: 0;
+    animation: fadeInOut 3s ease-in-out forwards;
+    user-select: none;
+    position: absolute;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

@@ -4,6 +4,7 @@ import Navbar from './component/Navbar'
 import StarBackground from './component/StarBackground'
 import { ThemeProvider} from './store/ThemeContext'
 import Timeline from './component/Timeline'
+import Portfolio from './component/Portfolio'
 
 
 
@@ -22,6 +23,7 @@ function App() {
         <Timeline/>
       </section>
       <section id="portfolio">
+        <Portfolio/>
       </section>
     </ThemeProvider>
   )

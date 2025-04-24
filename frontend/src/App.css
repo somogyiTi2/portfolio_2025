@@ -7,6 +7,9 @@ section {
 }
 
 #timeline{
-
     height: 50vh;
+}
+ 
+#portfolio{
+    background-color: rgb(197, 197, 197);
 }
