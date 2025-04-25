@@ -6,18 +6,23 @@ type ReferencesType = {
     text: string;
     link: string;
     technologies: string[];
+    git: string;
 };
 
 const ExampleCarouselImage = ({ item, theme }: { item: ReferencesType, theme: string }) => (
-    <div key={item.id} className="slide">
-        <div className={`slide-text ${theme}`}>
-            <h2>{item.title}</h2>
-            <p>{item.text}</p>
-            <p>{item.link}</p>
-            <p>{item.technologies.join(', ')}</p>
-        </div>
-        <div className="slide-picture">
-            <img src={item.img} alt={item.title} />
+    <div key={item.id} className={`slide ${theme}`}>
+        <div className="slide-container">
+            <div className={`slide-text ${theme} slide-text-left`}>
+                <h2>{item.title}</h2>
+                <p>{item.text}</p>
+                <p>{item.technologies.join(', ')}</p>
+                <p className="slide-linkek"
+                >{item.link && <a href={item.link}>Link</a>}
+                    {item.git && <a href={item.git}>GitHub</a>}</p>
+            </div>
+            <div className="slide-picture slide-picture-right">
+                <img src={item.img} alt={item.title} />
+            </div>
         </div>
     </div>
 );

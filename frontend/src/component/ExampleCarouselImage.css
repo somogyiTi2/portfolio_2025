@@ -5,11 +5,10 @@
   align-items: center;
   /* Kép és szöveg vertikális középre igazítása */
   justify-content: center;
-  background-color: #5a5a5a6b;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  width: 100vh;
+  width: 126vh;
   /* Ezt hozzáadva biztosítjuk, hogy a szélesség fix legyen */
   height: 100%;
   /* Magasságot is rögzítünk, hogy ne legyen ugrálás */
@@ -17,11 +16,21 @@
   /* Ne engedje, hogy túlnőjön a szülő konténeren */
   max-height: 100%;
   /* A magasságot is korlátozzuk */
-
+  transition: background-color 3s ease, color 3 ease;
 }
 
-slide-text img {
-  opacity: 0;
+.slide.light {
+  background-color: rgb(228, 140, 9, 0.5);
+  color: rgb(0, 0, 0);
+}
+
+.slide.dark {
+  background-color: #5a5a5a6b;
+  color: white;
+}
+
+.slider-button {
+  color: white
 }
 
 /* A kép és szöveg maximális megjelenítése */
@@ -50,20 +59,54 @@ slide-text img {
   /* Finomabb váltás */
 }
 
-/* Animációk alatti sima átmenet */
-.slide.fade .carousel-item-next,
-.slide.fade .carousel-item-prev,
-.slide.fade .carousel-item.active {
-  transition: transform 0.5s ease-in-out;
-  /* Finomabb áttűnések */
+.slide-text {
+  margin: 100px;
 }
+
+.slide-linkek {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.slide-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+  /* Térköz a két rész között */
+}
+
+.slide-text-left {
+  flex: 6;
+  /* 60% arány */
+  padding-left: 20px;
+  /* Üres hely bal oldalon */
+  box-sizing: border-box;
+}
+
+.slide-picture-right {
+  flex: 4;
+  /* 40% arány */
+  padding-right: 20px;
+  /* Üres hely jobb oldalon */
+  box-sizing: border-box;
+}
+
+.slide-picture-right img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 
 /* A reszponzív megjelenéshez biztosítjuk, hogy ne legyenek nagyobbak a képek */
 @media (max-width: 768px) {
   .slide {
     width: 100%;
     /* Ezt hozzáadva biztosítjuk, hogy a szélesség fix legyen */
-    flex-direction: column;
+    justify-content: space-around;
   }
 
   .slide-text {

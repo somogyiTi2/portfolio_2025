@@ -1,13 +1,22 @@
 {
   "welcome": "Üdvözöllek",
-  "portfolioCode":"// Portfolio Site\n\nconst name: string[] = ['Somogyi', 'Tibor'];\nconst job: string = 'Software Engineer';\nlet Frameworks: string[] = ['React.js', 'Next.js'];\nlet languages = [\n  { short: 'hu', long: 'Hungarian', level: 'C2' },\n  { short: 'en', long: 'English', level: 'B1-B2' }\n];\nconst [learning, setLearning] = useState<string>('React.ts');\n // TODO: make better",
+  "portfolioCode": "// Portfolio Site\n\nconst name: string[] = ['Somogyi', 'Tibor'];\nconst job: string = 'Software Engineer';\nlet Frameworks: string[] = ['React.js', 'Next.js'];\nlet languages = [\n  { short: 'hu', long: 'Hungarian', level: 'C2' },\n  { short: 'en', long: 'English', level: 'B1-B2' }\n];\nconst [learning, setLearning] = useState<string>('React.ts');\n // TODO: make better",
   "experiencesSelector": [
-    {"title":"Minden", "value":"all"},
-    {"title":"Tapasztalat", "value":"experience"},
-    {"title":"Képzés", "value":"certificate"}
+    {
+      "title": "Minden",
+      "value": "all"
+    },
+    {
+      "title": "Tapasztalat",
+      "value": "experience"
+    },
+    {
+      "title": "Képzés",
+      "value": "certificate"
+    }
   ],
-  "expericences-title":"Tapasztalatok és tanulmányok",
-  "experiences":[
+  "expericences-title": "Tapasztalatok és tanulmányok",
+  "experiences": [
     {
       "id": 1,
       "title": "Graduation certificate",
@@ -100,6 +109,246 @@
       "year": "2025",
       "categorie": "certificate"
     }
-  ]
-  
+  ],
+  "references": [
+    {
+      "id": 1,
+      "title": "CV 2 ",
+      "img": "https://raw.githubusercontent.com/somogyiTi2/First_step_Wikia/main/jegyzetek/img/bemutato/cv2.jpg",
+      "text": "Az első önéletrajzom, amit HTML és CSS segítségével készítettem. Az oldal statikus, alapvetően bemutatja az önéletrajzomat.",
+      "link": "https://somogyiti2.github.io/First_step_Wikia/angela_webdev/css-CV2/index.html",
+      "technologies": [
+        "HTML",
+        "CSS"
+      ],
+      "git": "https://github.com/somogyiTi2/First_step_Wikia/tree/main/angela_webdev/css-CV2"
+    },
+    {
+      "id": 2,
+      "title": "CV 3 ",
+      "img": "https://raw.githubusercontent.com/somogyiTi2/First_step_Wikia/main/jegyzetek/img/bemutato/cv3.jpg",
+      "text": "Az első próbálkozásom a Bootstrap használatával, ahol a dizájnt modernizáltam. A célom az volt, hogy a saját önéletrajzomat készítsem el egy dinamikusabb stílusban.",
+      "link": "https://somogyiti2.github.io/First_step_Wikia/angela_webdev/CV3_Bootstrap/index.html",
+      "technologies": [
+        "HTML",
+        "CSS",
+        "Bootstrap"
+      ],
+      "git": "https://github.com/somogyiTi2/First_step_Wikia/tree/main/angela_webdev/CV3_Bootstrap"
+    },
+    {
+      "id": 3,
+      "title": "Kocka dobás",
+      "img": "https://raw.githubusercontent.com/somogyiTi2/First_step_Wikia/main/jegyzetek/img/bemutato/dobolj.jpg",
+      "text": "Ez volt az első JavaScript-es játék, amit készítettem. Két kockával lehet dobni, és az oldal megmondja, melyik nyert.",
+      "link": "https://somogyiti2.github.io/First_step_Wikia/angela_webdev/F/Kockajatek/index.html",
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "git": "https://github.com/somogyiTi2/First_step_Wikia/tree/main/angela_webdev/F/Kockajatek/"
+    },
+    {
+      "id": 4,
+      "title": "Dobolj",
+      "img": "https://raw.githubusercontent.com/somogyiTi2/First_step_Wikia/main/jegyzetek/img/bemutato/kockaJatek.jpg",
+      "text": "A weboldalon egy egyszerű dobolós játék található, amit billentyűzetről vagy egérrel is vezérelhetsz.",
+      "link": "https://somogyiti2.github.io/First_step_Wikia/angela_webdev/F/dob/index.html",
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "git": "https://github.com/somogyiTi2/First_step_Wikia/tree/main/angela_webdev/F/dob"
+    },
+    {
+      "id": 5,
+      "title": "Blog oldal",
+      "img": "https://somogyiti2.github.io/First_step_Wikia/angela_webdev/Hyper/img/ejs01.jpg",
+      "text": "Egy saját blogoldal, ahol a bejegyzéseket szerver oldalon tárolom. A projekt a Node.js és EJS segítségével lett megvalósítva.",
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JS",
+        "Node.js",
+        "EJS"
+      ],
+      "git": "https://github.com/somogyiTi2/First_step_Wikia/tree/main/angela_webdev/Hyper/ejs-challenge"
+    },
+    {
+      "id": 6,
+      "title": "Log in Google",
+      "img": "https://somogyiti2.github.io/First_step_Wikia/angela_webdev/Hyper/img/Secrets_01.jpg",
+      "text": "Egy autentikált weboldal, amely a Google és Facebook fiókokkal való bejelentkezést támogatja. Az adatokat MongoDB-ben tárolom, és a helyi tárolás biztosítja a bejelentkezés fenntartását.",
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JS",
+        "Node.js",
+        "EJS",
+        "MongoDB"
+      ],
+      "git": "https://github.com/somogyiTi2/First_step_Wikia/tree/main/angela_webdev/F/dob"
+    },
+    {
+      "id": 7,
+      "title": "ToDo List (Node)",
+      "img": "https://somogyiti2.github.io/First_step_Wikia/angela_webdev/Hyper/img/todolist_v1.jpg",
+      "text": "Egy egyszerű ToDo lista, ahol az adatokat adatbázisban tárolom, és új lista létrehozására van lehetőség URL alapján.",
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JS",
+        "Node.js",
+        "EJS",
+        "MongoDB"
+      ],
+      "git": "https://github.com/somogyiTi2/First_step_Wikia/tree/main/angela_webdev/Hyper/todolist_v2"
+    },
+    {
+      "id": 8,
+      "title": "ToDo List (első Reactos) ",
+      "img": "https://raw.githubusercontent.com/somogyiTi2/First_step_Wikia/main/jegyzetek/img/bemutato/ToDoReact.jpg",
+      "text": "Az első React alkalmazásom, ahol a ToDo lista funkciót valósítottam meg.",
+      "link": "https://codesandbox.io/s/33-28-keeper-part-3-starting-g3ybit?file=/src/index.js",
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "git": "https://codesandbox.io/s/33-28-keeper-part-3-starting-g3ybit?file=/src/index.js"
+    },
+    {
+      "id": 9,
+      "title": "CodeYard felvételi feladat",
+      "img": "https://raw.githubusercontent.com/somogyiTi2/First_step_Wikia/main/jegyzetek/img/bemutato/codeYard.jpg",
+      "text": "A feladat egy bodyshield készítése volt, amit React és Firebase segítségével valósítottam meg.",
+      "link": "https://somogyiti2.github.io/CodeYard/",
+      "technologies": [
+        "React",
+        "Firebase",
+        "Bootstrap",
+        "HTML",
+        "CSS"
+      ],
+      "git": "https://github.com/somogyiTi2/wikia-react/tree/main/13_17_Restaurant_project_full"
+    },
+    {
+      "id": 10,
+      "title": "Első online Webáruház",
+      "img": "https://raw.githubusercontent.com/somogyiTi2/First_step_Wikia/main/jegyzetek/img/bemutato/webshop.jpg",
+      "text": "Egy kisebb webáruház, ahol a kosár funkció és rendelés leadása van megvalósítva, Firebase adatbázisba tárolva.",
+      "technologies": [
+        "React",
+        "Firebase",
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "git": "https://github.com/somogyiTi2/wikia-react/tree/main/13_17_Restaurant_project_full"
+    },
+    {
+      "id": 11,
+      "title": "Aszinkron működő kosár",
+      "img": "https://raw.githubusercontent.com/somogyiTi2/First_step_Wikia/main/jegyzetek/img/bemutato/async.jpg",
+      "text": "A kosár aszinkron működését valósítottam meg React és Redux segítségével. Az adatokat egy Redux Store-ban kezeljük.",
+      "technologies": [
+        "React",
+        "Redux",
+        "Redux-toolkit",
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "git": "https://github.com/somogyiTi2/wikia-react/tree/main/16_19_Redux_aszinkorn_kosar_mentes"
+    },
+    {
+      "id": 12,
+      "title": "Cukrászda",
+      "img": "https://raw.githubusercontent.com/somogyiTi2/First_step_Wikia/main/jegyzetek/img/bemutato/cukraszda.jpg",
+      "link": "https://react-bemutato-cukraszda-webshop.vercel.app/",
+      "text": "Egy webáruház, ahol termékeket lehet rendelni, a rendeléseket Firebase adatbázis tárolja. Az admin felület segítségével új termékeket adhatunk hozzá, és kezelhetjük a rendeléseket.",
+      "technologies": [
+        "React",
+        "Firebase",
+        "HTML",
+        "CSS",
+        "JS",
+        "Bootstrap"
+      ],
+      "git": "https://github.com/somogyiTi2/somogyiTi2-react-bemutato-cukraszda_webshop"
+    },
+    {
+      "id": 13,
+      "title": "ToDo List (React Native)",
+      "img": "https://raw.githubusercontent.com/somogyiTi2/First_step_Wikia/main/jegyzetek/img/bemutato/TodoReactNatiefirst.jpg",
+      "text": "Egy több platformot támogató mobil alkalmazás, amely lehetővé teszi a felhasználók számára, hogy egyszerűen nyilvántartsák a napi teendőiket. A projekt React Native keretrendszerrel készült, így Android és iOS rendszereken is működik. Az alkalmazás felhasználóbarát felületet kínál, amelyen a teendők listája könnyen hozzáadható, szerkeszthető és törölhető. A React Native segítségével a fejlesztés gyorsan valósítható meg több platformon.",
+      "technologies": [
+        "React Native"
+      ],
+      "git": "https://github.com/somogyiTi2/wikia-react/blob/main/REACT_NATIVE/3-25_ScollView.js"
+    },
+    {
+      "id": 14,
+      "title": "Kitalált hírfolyam",
+      "img": "https://raw.githubusercontent.com/somogyiTi2/First_step_Wikia/main/jegyzetek/img/bemutato/kitalalt.jpg",
+      "text": "Ez egy egyszerű több oldalas CRUD (Create, Read, Update, Delete) alkalmazás, amely autentikációval van ellátva. Az alkalmazás lehetővé teszi a felhasználók számára, hogy híreket hozzanak létre, olvassanak, frissítsenek és töröljenek. A projekt Next.js-t használ a frontend fejlesztéshez, míg a MongoDB-t az adatok tárolásához. A felhasználók biztonságos belépéssel érhetik el a különböző funkciókat.",
+      "technologies": [
+        "Next.js",
+        "MongoDB",
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "git": "https://github.com/somogyiTi2/wikia-react/blob/main/REACT_NATIVE/3-25_ScollView.js"
+    },
+    {
+      "id": 15,
+      "title": "Falatozz",
+      "img": "https://raw.githubusercontent.com/somogyiTi2/First_step_Wikia/main/jegyzetek/img/bemutato/falatozz.jpg",
+      "text": "Ez a webalkalmazás a Falatozz.hu interjújára készült, és egy CRUD (Create, Read, Update, Delete) funkcióval rendelkező rendszer. Az alkalmazás lehetőséget ad a felhasználóknak termékek hozzáadására, szerkesztésére és törlésére. A weboldalon a termékek kártyás elrendezésben jelennek meg, és lehetőség van azok adatainak módosítására. A Firebase backend biztosítja a felhasználói adatok biztonságos kezelését. A projekt React és Firebase integrációt használ a dinamikus működéshez.",
+      "link": "https://falatozz-somogyiti2.vercel.app/",
+      "technologies": [
+        "React",
+        "React-router",
+        "Firebase",
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "git": "https://github.com/somogyiTi2/falatozz_react"
+    },
+    {
+      "id": 16,
+      "title": "CV Reactos",
+      "img": "https://raw.githubusercontent.com/somogyiTi2/First_step_Wikia/main/jegyzetek/img/bemutato/CVReact.jpg",
+      "text": "Ez a projekt az én személyes portfólióm, amely bemutatja a készségeimet és szakmai tapasztalataimat. Az oldal React keretrendszerrel készült, és tartalmazza azokat a funkciókat, amelyek szükségesek egy alapvető bemutatkozó oldalhoz. Az alkalmazás könnyen navigálható és különböző nyelveken elérhető az i18next könyvtár segítségével. Az oldal célja, hogy professzionális megjelenést biztosítson egy egyszerű, de elegáns portfólió számára.",
+      "technologies": [
+        "React",
+        "React-router",
+        "i18next",
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "git": "https://github.com/somogyiTi2/Somogyi_Tibor_CV_2023"
+    },
+    {
+      "id": 17,
+      "title": "Comnica",
+      "img": "https://raw.githubusercontent.com/somogyiTi2/First_step_Wikia/refs/heads/main/jegyzetek/img/bemutato/Comnica.jpg",
+      "text": "A Comnica egy interjú feladat, amely egy egyszerű weboldal felületét tartalmazza. A feladat célja egy React alkalmazás létrehozása, amely tartalmaz egy gombot, egy beviteli mezőt, és egy felhasználói lista megjelenítését egy API-ból. A gomb kattintásra különböző eseményeket vált ki, míg a beviteli mező működése kitöltetlen és kitöltött állapotban is megjeleníthető. A felhasználói lista színezése véletlenszerű, és konzolon történik a végrehajtás. A projektben a React és TypeScript használata biztosítja a dinamikus és típusbiztos fejlesztést.",
+      "technologies": [
+        "React",
+        "Types Script",
+        "CSS",
+        "JS"
+      ],
+      "git": "https://github.com/somogyiTi2/Comnica",
+      "link": "https://comnica.vercel.app/"
+    }
+  ],
+  "allButton": "Összes",
+  "referencesTitle": "Referenciák"
 }
