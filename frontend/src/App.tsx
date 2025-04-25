@@ -2,9 +2,10 @@ import './App.css'
 import Hero from './component/Hero'
 import Navbar from './component/Navbar'
 import StarBackground from './component/StarBackground'
-import { ThemeProvider} from './store/ThemeContext'
+import { ThemeProvider } from './store/ThemeContext'
 import Timeline from './component/Timeline'
 import Portfolio from './component/Portfolio'
+import Connection from './component/Connection'
 
 
 function App() {
@@ -17,10 +18,13 @@ function App() {
         </StarBackground>
       </section>
       <section id="timeline">
-        <Timeline/>
+        <Timeline />
       </section>
       <section id="portfolio">
-        <Portfolio/>
+        <Portfolio />
+      </section>
+      <section id="connection">
+        <Connection />
       </section>
     </ThemeProvider>
   )

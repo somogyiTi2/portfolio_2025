@@ -6,7 +6,7 @@ section {
     scroll-snap-align: start;
 }
 
-#timeline{
+#timeline, #connection{
     height: 50vh;
 }
  

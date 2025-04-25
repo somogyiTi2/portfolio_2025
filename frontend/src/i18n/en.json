@@ -350,5 +350,7 @@
     }
   ],
   "allButton": "All",
-  "referencesTitle": "References"
+  "referencesTitle": "References",
+  "connectionTitle": "Connection",
+  "connectionDescripton": "Get in touch with me through the channels below if you'd like to work together or have any questions about my projects."
 }

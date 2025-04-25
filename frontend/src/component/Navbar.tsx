@@ -12,6 +12,7 @@ const Navbar = () => {
             <a href="#me">Me</a>
             <a href="#timeline">Munkák</a>
             <a href="#portfolio">Portfólió</a>
+            <a href="#connection">Kapcsolatok</a>
             <div>
                 <ColoreSelector />
                 <LanguageSelector />

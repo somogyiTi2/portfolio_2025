@@ -350,5 +350,7 @@
     }
   ],
   "allButton": "Összes",
-  "referencesTitle": "Referenciák"
+  "referencesTitle": "Referenciák",
+  "connectionTitle":"Kapcsolatok",
+  "connectionDescripton":"Lépj kapcsolatba velem az alábbi csatornákon, ha együtt dolgoznál velem vagy kérdésed van a munkáimmal kapcsolatban."
 }
