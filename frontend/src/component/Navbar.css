@@ -1,26 +1,42 @@
-html,
-body {
-    scroll-behavior: smooth;
-}
-
 nav {
     position: fixed;
     top: 0;
     width: 100%;
     padding: 1rem;
     display: flex;
+    flex-direction: column;
     z-index: 10;
-    height: auto;
     transition: background-color 1s ease;
-    justify-content: space-around
 }
 
-nav.dark {
-    background-color: rgba(124, 124, 124, 0.137)
+.nav.dark {
+    background-color: rgba(124, 124, 124, 0.137);
 }
 
-nav.light {
-    background-color: rgba(71, 71, 71, 0.24)
+.nav.light {
+    background-color: rgba(71, 71, 71, 0.24);
+}
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: rgb(131, 131, 131);
+    display: none;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    transition: max-height 0.3s ease-in-out;
 }
 
 .nav a {
@@ -30,7 +46,6 @@ nav.light {
     font-weight: 500;
     font-size: 16px;
     transition: color 0.2s ease;
-    transition: font-size 1s ease;
 }
 
 .nav a:hover {
@@ -38,13 +53,29 @@ nav.light {
     font-size: 20px;
 }
 
-.nav-links {
-    display: flex;
-    gap: 16px;
-}
-
 .nav-controls {
     display: flex;
     gap: 12px;
     align-items: center;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        overflow: hidden;
+        max-height: 0;
+    }
+
+    .nav-links.open {
+        max-height: 500px; /* vagy elég nagy érték */
+    }
+
+    .nav a {
+        margin: 10px 0;
+        font-size: 18px;
+    }
 }
