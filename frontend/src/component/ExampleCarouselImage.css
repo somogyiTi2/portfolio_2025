@@ -103,14 +103,21 @@
 
 /* A reszponzív megjelenéshez biztosítjuk, hogy ne legyenek nagyobbak a képek */
 @media (max-width: 768px) {
+  .slider-button {
+    height: 25vh;
+  }
+
   .slide {
+    display: flex;
     width: 100%;
+    height: 75vh;
     /* Ezt hozzáadva biztosítjuk, hogy a szélesség fix legyen */
     justify-content: space-around;
   }
 
   .slide-text {
-    font-size: 14px;
+    font-size: 2rem;
+    margin: 0px;
     /* Kisebb szöveg kisebb képernyőkön */
   }
 
@@ -125,9 +132,12 @@
     object-fit: contain;
     /* A kép jobban illeszkedjen a kisebb képernyőkhöz */
   }
-}
 
-@media (max-width: 425px) {
+  .slide-container {
+    display: flex;
+    flex-direction: column;
+  }
+
   .slide-text h2 {
     font-size: 16px;
   }
@@ -135,7 +145,13 @@
   .slide-text p {
     font-size: 12px;
   }
+  .slide img{
+    height: 100px;
+  }
 
+}
+
+@media (max-width: 425px) {
   .slide-picture img {
     object-fit: contain;
     /* Biztosítja, hogy a kép kisebb képernyőkön is megfelelően illeszkedjen */
