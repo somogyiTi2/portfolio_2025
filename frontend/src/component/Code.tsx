@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { CodeBlock } from "react-code-blocks";
 import { tomorrowNightEighties, paraisoLight } from "react-code-blocks";
 import { useTheme } from '../store/ThemeContext';

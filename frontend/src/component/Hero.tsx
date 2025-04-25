@@ -1,4 +1,3 @@
-import React from 'react';
 import MeSVG from './MeSVG';
 import './Hero.css'
 import { useTheme } from '../store/ThemeContext';

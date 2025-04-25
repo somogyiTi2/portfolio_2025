@@ -1,4 +1,3 @@
-import React from 'react';
 import { ThemeType, useTheme } from '../store/ThemeContext';
 import './ColoreSelector.css';
 
