@@ -1,6 +1,6 @@
 import MeSVG from './MeSVG';
 import './Hero.css'
-import { useTheme } from '../store/ThemeContext';
+import { useTheme } from '../store/theme';
 import Code from './Code';
 
 

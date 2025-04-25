@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Timeline.css';
 import { useTranslation } from 'react-i18next';
-import { useTheme } from '../store/ThemeContext';
+import { useTheme } from '../store/theme';
 
 type TimelineItem = {
     id: number;

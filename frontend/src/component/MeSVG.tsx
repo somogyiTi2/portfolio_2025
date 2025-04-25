@@ -1,5 +1,5 @@
 import MeImage from "../assets/mee.png";
-import { useTheme } from "../store/ThemeContext";
+import { useTheme } from "../store/theme";
 import './MeSVG.css'
 
 const MeSVG = () => {

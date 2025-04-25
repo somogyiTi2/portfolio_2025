@@ -1,6 +1,6 @@
 import React from 'react';
 import './StarBackground.css';
-import { useTheme } from '../store/ThemeContext';
+import { useTheme } from '../store/theme';
 
 interface TryStarProps {
     children?: React.ReactNode;

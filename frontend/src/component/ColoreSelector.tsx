@@ -1,4 +1,4 @@
-import { ThemeType, useTheme } from '../store/ThemeContext';
+import { ThemeType, useTheme } from '../store/theme';
 import './ColoreSelector.css';
 
 const ColorSelector = () => {

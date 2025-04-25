@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
-import { CodeBlock } from "react-code-blocks";
-import { tomorrowNightEighties, paraisoLight } from "react-code-blocks";
-import { useTheme } from '../store/ThemeContext';
+import { CodeBlock , tomorrowNightEighties, paraisoLight } from "react-code-blocks";
+import { useTheme } from '../store/theme';
 import { useTranslation } from 'react-i18next';
 import '../i18n';
 
@@ -21,7 +20,7 @@ const Code = () => {
           }, 15);
           return () => clearTimeout(timeout);
         }
-      }, [counter]);
+      }, [counter, fullText]);
 
     return (
         <CodeBlock text={codeText} language="typescript" theme={codeTheme} />
