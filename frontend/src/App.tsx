@@ -7,10 +7,7 @@ import Timeline from './component/Timeline'
 import Portfolio from './component/Portfolio'
 
 
-
 function App() {
-
-
   return (
     <ThemeProvider>
       <Navbar />

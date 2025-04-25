@@ -1,0 +1,100 @@
+/* Alap stílusok a slide-hoz */
+.slide {
+  display: flex;
+  /* A kép és a szöveg sorba rendezése */
+  align-items: center;
+  /* Kép és szöveg vertikális középre igazítása */
+  justify-content: center;
+  background-color: #5a5a5a6b;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100vh;
+  /* Ezt hozzáadva biztosítjuk, hogy a szélesség fix legyen */
+  height: 100%;
+  /* Magasságot is rögzítünk, hogy ne legyen ugrálás */
+  max-width: 100%;
+  /* Ne engedje, hogy túlnőjön a szülő konténeren */
+  max-height: 100%;
+  /* A magasságot is korlátozzuk */
+
+}
+
+slide-text img {
+  opacity: 0;
+}
+
+/* A kép és szöveg maximális megjelenítése */
+.slide-picture {
+  flex: 0 0 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  /* Maximális szélesség beállítása */
+  max-height: 100%;
+  /* Maximális magasság beállítása */
+}
+
+/* Kép stílusok */
+.slide-picture img {
+  width: 100%;
+  /* Az egész szélességet kitölti */
+  height: 100%;
+  /* Magasság beállítása */
+  object-fit: cover;
+  /* Az arányok megtartása */
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+  /* Finomabb váltás */
+}
+
+/* Animációk alatti sima átmenet */
+.slide.fade .carousel-item-next,
+.slide.fade .carousel-item-prev,
+.slide.fade .carousel-item.active {
+  transition: transform 0.5s ease-in-out;
+  /* Finomabb áttűnések */
+}
+
+/* A reszponzív megjelenéshez biztosítjuk, hogy ne legyenek nagyobbak a képek */
+@media (max-width: 768px) {
+  .slide {
+    width: 100%;
+    /* Ezt hozzáadva biztosítjuk, hogy a szélesség fix legyen */
+    flex-direction: column;
+  }
+
+  .slide-text {
+    font-size: 14px;
+    /* Kisebb szöveg kisebb képernyőkön */
+  }
+
+  .slide-picture {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+    height: 250px;
+    /* A kisebb képernyőkön kisebb magasság */
+  }
+
+  .slide-picture img {
+    object-fit: contain;
+    /* A kép jobban illeszkedjen a kisebb képernyőkhöz */
+  }
+}
+
+@media (max-width: 425px) {
+  .slide-text h2 {
+    font-size: 16px;
+  }
+
+  .slide-text p {
+    font-size: 12px;
+  }
+
+  .slide-picture img {
+    object-fit: contain;
+    /* Biztosítja, hogy a kép kisebb képernyőkön is megfelelően illeszkedjen */
+  }
+}
