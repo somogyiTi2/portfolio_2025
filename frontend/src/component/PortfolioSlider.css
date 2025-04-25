@@ -1,5 +1,3 @@
-
-
 .slider-selector-button {
     border: none;
     border-radius: 90px;
@@ -22,6 +20,6 @@
     color: white;
 }
 
-.carousel-inner{
-    height: 100%;
+.carousel-inner {
+    height: 100vh;
 }

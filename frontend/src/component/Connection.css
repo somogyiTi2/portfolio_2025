@@ -1,5 +1,5 @@
  .card {
-     width: 300px;
+     width: 30%;
      padding: 20px;
      background-color: #ffffff;
      border-radius: 8px;
@@ -69,3 +69,44 @@
  .showHover:hover p {
      display: block;
  }
+
+ @media (max-width: 768px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        justify-items: center;
+    }
+
+    .card {
+        width: 90%;
+        height: 50px; /* vagy amit jónak látsz pl. 300px */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card h2 {
+        font-size: 20px;
+    }
+
+    .card p {
+        font-size: 14px;
+        flex-grow: 1; /* hogy a szöveg elfoglalja a köztes helyet */
+    }
+
+    .card img{
+        position: absolute;
+        height: 20px;
+    }
+
+    .card button {
+        visibility: hidden;
+    }
+    .showHover p {
+        display: block;
+        position: absolute;
+        bottom: -45%;
+    }
+}

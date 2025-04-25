@@ -19,28 +19,30 @@ const Connection = () => {
             <h2>{t('connectionTitle')}</h2>
             <p>{t('connectionDescripton')}</p>
             <div className="cards">
-                <div className="card">
-                    <img src={facebook} alt="facebook" />
-                    <a href="https://www.facebook.com/somogyitibor97/">
+                <a href="https://www.facebook.com/somogyitibor97/">
+                    <div className="card">
+                        <img src={facebook} alt="facebook" />
                         <button>Kattints ide</button>
-                    </a>
-                </div>
-                <div className="card">
-                    <img src={github} alt="github" />
-                    <a href="https://github.com/somogyiTi2">
+                    </div>
+                </a>
+                <a href="https://github.com/somogyiTi2">
+                    <div className="card">
+                        <img src={github} alt="github" />
                         <button>Kattints ide</button>
-                    </a>
-                </div>
-                <div className="card">
-                    <img src={linkdin} alt="linkdin" />
-                    <a href="https://www.linkedin.com/in/somogyi-tibor-linkdin/">
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/somogyi-tibor-linkdin/">
+                    <div className="card">
+                        <img src={linkdin} alt="linkdin" />
                         <button>Kattints ide</button>
-                    </a>
-                </div>
-                <div className="card showHover">
-                    <img src={phone} alt="phone" />
-                    <button onClick={openDialer}>Kattints ide</button>
-                    <p >{phoneNumber}</p>
+                    </div>
+                </a>
+                <div className="card ">
+                <img src={phone} alt="Telefon ikon" />
+                    <button className="icon-wrapper" onClick={openDialer}>
+                     <img src={phone} alt="Telefon ikon" />
+                    </button>
+                    <p className='showHover'>{phoneNumber}</p>
                 </div>
             </div>
         </div>
