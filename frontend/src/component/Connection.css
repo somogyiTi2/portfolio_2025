@@ -1,109 +1,89 @@
- .card {
-     width: 30%;
-     padding: 20px;
-     background-color: #ffffff;
-     border-radius: 8px;
-     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-     text-align: center;
-     transition: transform 0.3s ease;
- }
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
 
- .card:hover {
-     transform: scale(1.05);
- }
+.card p {
+    font-size: 16px;
+    color: #666;
+}
 
- .card h2 {
-     font-size: 24px;
-     margin-bottom: 10px;
-     color: #333;
- }
+.card button:hover {
+    background-color: #0056b3;
+}
 
- .card p {
-     font-size: 16px;
-     color: #666;
- }
+.contactSelection {
+    color: white;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    flex-direction: column
+}
 
- .card button {
-     padding: 10px 20px;
-     background-color: #007bff;
-     color: #fff;
-     border: none;
-     border-radius: 5px;
-     cursor: pointer;
-     font-size: 16px;
-     transition: background-color 0.3s;
- }
+.contactSelection.light {
+    background-color: rgb(228, 140, 9);
+}
 
- .card button:hover {
-     background-color: #0056b3;
- }
+.contactSelection.dark {
+    background-color: #002a37;
+}
 
- .contactSelection {
-     color: white;
-     height: 100%;
-     width: 100%;
-     font-family: Arial, sans-serif;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     margin: 0;
-     flex-direction: column
- }
+.showHover p {
+    display: none;
+}
 
- .contactSelection.light {
-     background-color: rgb(228, 140, 9);
- }
+.showHover:hover p {
+    display: block;
+}
 
- .contactSelection.dark {
-     background-color: #002a37;
- }
+.card img {
+    position: absolute;
+    height: 100px
+}
 
- .cards {
-     display: flex;
- }
 
- .showHover p {
-     display: none;
- }
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
 
- .showHover:hover p {
-     display: block;
- }
+.card {
+    width: 100px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card img {
+    position: absolute;
+    height: 20px;
+}
 
- @media (max-width: 768px) {
-    .cards {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-        justify-items: center;
-    }
-
-    .card {
-        width: 90%;
-        height: 50px; /* vagy amit jónak látsz pl. 300px */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
+@media only screen and (max-width:800px) {
     .card h2 {
         font-size: 20px;
     }
 
     .card p {
         font-size: 14px;
-        flex-grow: 1; /* hogy a szöveg elfoglalja a köztes helyet */
+        flex-grow: 1;
+        /* hogy a szöveg elfoglalja a köztes helyet */
     }
 
-    .card img{
-        position: absolute;
-        height: 20px;
-    }
+ 
 
     .card button {
         visibility: hidden;
     }
+
     .showHover p {
         display: block;
         position: absolute;

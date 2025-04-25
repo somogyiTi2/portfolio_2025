@@ -22,28 +22,25 @@ const Connection = () => {
                 <a href="https://www.facebook.com/somogyitibor97/">
                     <div className="card">
                         <img src={facebook} alt="facebook" />
-                        <button>Kattints ide</button>
+
                     </div>
                 </a>
                 <a href="https://github.com/somogyiTi2">
                     <div className="card">
                         <img src={github} alt="github" />
-                        <button>Kattints ide</button>
+
                     </div>
                 </a>
                 <a href="https://www.linkedin.com/in/somogyi-tibor-linkdin/">
                     <div className="card">
                         <img src={linkdin} alt="linkdin" />
-                        <button>Kattints ide</button>
+
                     </div>
                 </a>
                 <div className="card ">
-                <img src={phone} alt="Telefon ikon" />
-                    <button className="icon-wrapper" onClick={openDialer}>
-                     <img src={phone} alt="Telefon ikon" />
-                    </button>
-                    <p className='showHover'>{phoneNumber}</p>
+                    <img src={phone} alt="Telefon ikon" onClick={openDialer} />
                 </div>
+                <p className='showHover'>{phoneNumber}</p>
             </div>
         </div>
     );
