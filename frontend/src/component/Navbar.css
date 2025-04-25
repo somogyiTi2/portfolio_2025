@@ -9,10 +9,10 @@ nav {
     width: 100%;
     padding: 1rem;
     display: flex;
-    justify-content: space-between;
     z-index: 10;
     height: auto;
     transition: background-color 1s ease;
+    justify-content: space-around
 }
 
 nav.dark {
@@ -21,4 +21,30 @@ nav.dark {
 
 nav.light {
     background-color: rgba(71, 71, 71, 0.24)
+}
+
+.nav a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: rgb(131, 131, 131);
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.2s ease;
+    transition: font-size 1s ease;
+}
+
+.nav a:hover {
+    color: #0077ff;
+    font-size: 20px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 16px;
+}
+
+.nav-controls {
+    display: flex;
+    gap: 12px;
+    align-items: center;
 }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import '../i18n';
+import './LanguageSelector.css'; // külső stílus hozzáadása
 
 type LanguageOption = { value: string; optionText: string };
 
@@ -9,8 +10,8 @@ const LanguageSelector = () => {
     const [language, setLanguage] = useState("en");
 
     const languages: LanguageOption[] = [
-        { value: 'en', optionText: 'eng' },
-        { value: 'hu', optionText: 'hun' }
+        { value: 'en', optionText: 'English' },
+        { value: 'hu', optionText: 'Magyar' }
     ];
 
     const languageSelector = (e: React.ChangeEvent<HTMLSelectElement>) => {
@@ -20,7 +21,7 @@ const LanguageSelector = () => {
     };
 
     return (
-        <div>
+        <div className="language-selector">
             <select value={language} onChange={languageSelector}>
                 {languages.map((lang) => (
                     <option key={lang.value} value={lang.value}>

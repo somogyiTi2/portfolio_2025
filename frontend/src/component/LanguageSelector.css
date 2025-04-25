@@ -1,0 +1,25 @@
+.language-selector {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.language-selector select {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.language-selector select:hover {
+    background-color: #eaeaea;
+}
+
+.language-selector select:focus {
+    outline: none;
+    border-color: #0077ff;
+    box-shadow: 0 0 0 2px rgba(0, 119, 255, 0.2);
+}

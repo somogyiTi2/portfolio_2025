@@ -351,6 +351,12 @@
   ],
   "allButton": "Összes",
   "referencesTitle": "Referenciák",
-  "connectionTitle":"Kapcsolatok",
-  "connectionDescripton":"Lépj kapcsolatba velem az alábbi csatornákon, ha együtt dolgoznál velem vagy kérdésed van a munkáimmal kapcsolatban."
+  "connectionTitle": "Kapcsolatok",
+  "connectionDescripton": "Lépj kapcsolatba velem az alábbi csatornákon, ha együtt dolgoznál velem vagy kérdésed van a munkáimmal kapcsolatban.",
+  "navbar": {
+    "about": "Rólam",
+    "expericences": "Tapasztalatok és tanulmányok",
+    "references": "Referenciák",
+    "connection": "Kapcsolatok"
+  }
 }
