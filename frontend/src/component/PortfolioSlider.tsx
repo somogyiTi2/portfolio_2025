@@ -1,9 +1,10 @@
-import Carousel from 'react-bootstrap/Carousel';
-import ExampleCarouselImage from './ExampleCarouselImage';
+import { useState, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
+import Carousel from 'react-bootstrap/Carousel';
+
+import ExampleCarouselImage from './ExampleCarouselImage';
 import { useTheme } from '../store/theme';
-import { useState } from 'react';
-import "./PortfolioSlider.css"
+import './PortfolioSlider.css';
 
 type ReferencesType = {
   id: number;
@@ -15,33 +16,44 @@ type ReferencesType = {
   git: string;
 };
 
-
 const CarouselFadeExample = () => {
   const { t } = useTranslation();
-  const references = (t('references', { returnObjects: true }) as ReferencesType[]).reverse();
-  const buttons = [...new Set(references.flatMap(item => item.technologies))];
   const { theme } = useTheme();
-  const [buttonSelected, setButtonSelected] = useState<string>('all');
+  const [buttonSelected, setButtonSelected] = useState('all');
 
-  const filteredReferences = buttonSelected === 'all'
-    ? references
-    : references.filter((data) => data.technologies.includes(buttonSelected));
+  const references = useMemo(
+    () => [...(t('references', { returnObjects: true }) as ReferencesType[])].reverse(),
+    [t]
+  );
+
+  const buttons = useMemo(
+    () => ['all', ...new Set(references.flatMap(ref => ref.technologies))],
+    [references]
+  );
+
+  const filteredReferences = useMemo(
+    () =>
+      buttonSelected === 'all'
+        ? references
+        : references.filter(ref => ref.technologies.includes(buttonSelected)),
+    [buttonSelected, references]
+  );
 
   return (
     <>
       <div className='slider-button'>
         <h1>{t('referencesTitle')}</h1>
-        <button key="all" className={`slider-selector-button ${theme} ${buttonSelected === "all" ? 'active' : ''}`} onClick={() => setButtonSelected("all")}> {t('allButton')}</button>
-        {buttons.map((item) => (
+        {buttons.map(btn => (
           <button
-            key={item}
-            className={`slider-selector-button ${theme} ${buttonSelected === item ? 'active' : ''}`}
-            onClick={() => setButtonSelected(item)}
+            key={btn}
+            className={`slider-selector-button ${theme} ${buttonSelected === btn ? 'active' : ''}`}
+            onClick={() => setButtonSelected(btn)}
           >
-            {item}
+            {btn === 'all' ? t('allButton') : btn}
           </button>
         ))}
       </div>
+
       <Carousel fade>
         {filteredReferences.map(item => (
           <Carousel.Item key={item.id}>
@@ -51,6 +63,6 @@ const CarouselFadeExample = () => {
       </Carousel>
     </>
   );
-}
+};
 
 export default CarouselFadeExample;
