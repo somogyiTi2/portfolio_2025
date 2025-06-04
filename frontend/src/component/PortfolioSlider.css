@@ -6,16 +6,16 @@
 }
 
 .slider-selector-button.light {
-    background: #f0f0f0;
-    color: rgb(0, 0, 0);
+    background: var(--white);
+    color: var(--black);
 }
 
 .slider-selector-button.dark {
-    background: #000000;
-    color: white;
+    background: var(--black);
+    color: var(--white);
 }
 
 .slider-selector-button.active {
-    background: #007bff;
-    color: white;
+    background: var(--blue);
+    color: var(--white);
 }

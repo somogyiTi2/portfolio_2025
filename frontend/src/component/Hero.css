@@ -22,15 +22,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: backgorund-color 1s;
+    transform: backgorund-color 1s ;
 }
 
 .rombus.dark {
-    background-color: blueviolet;
+    background-color: var(--blueviolet);
 }
 
 .rombus.light {
-    background-color: rgb(228, 140, 9);
+    background-color: var(--orange);
 }
 
 @media only screen and (max-width: 1024px) {

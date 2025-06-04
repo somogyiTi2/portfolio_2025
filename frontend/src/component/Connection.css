@@ -1,20 +1,20 @@
 .card h2 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #333;
+    color: var(--black);
 }
 
 .card p {
     font-size: 16px;
-    color: #666;
+    color: var(--sxsxsx)
 }
 
 .card button:hover {
-    background-color: #0056b3;
+    background-color: var(--blue);
 }
 
 .contactSelection {
-    color: white;
+    color: var(--white);
     height: 100%;
     width: 100%;
     font-family: Arial, sans-serif;
@@ -26,11 +26,11 @@
 }
 
 .contactSelection.light {
-    background-color: rgb(228, 140, 9);
+    background-color: var(--orange);
 }
 
 .contactSelection.dark {
-    background-color: #002a37;
+    background-color: var(--black);
 }
 
 .showHover p {

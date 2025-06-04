@@ -5,7 +5,7 @@
 }
 
 .experience-page.light {
-    background: rgb(228, 140, 9)
+    background: var(--orange)
 }
 
 .experience-page.dark {
@@ -41,25 +41,25 @@
 }
 
 .selector-wrapper.light button {
-    background: #f0f0f0;
-    color: rgb(0, 0, 0);
+    background: var(--white);
+    color: var(--black)
 }
 
 .selector-wrapper.dark button {
-    background: #000000;
-    color: white;
+    background: var(--black);
+    color: var(--white);
 }
 
 .selector-wrapper button.active {
-    background: #007bff;
-    color: white;
+    background: var(--blue);
+    color: var(--white);
 }
 
 .timeline-title {
     text-align: center;
     margin: 20px 0;
     font-size: 2rem;
-    color: #ffffff;
+    color: var(--white);
 }
 
 .timeline {
@@ -68,19 +68,19 @@
     scroll-behavior: smooth;
     padding-bottom: 20px;
     scrollbar-width: thin;
-    scrollbar-color: #007bff #f0f0f0;
+    scrollbar-color: var(--blue) var(--white);
     max-width: 100%;
     box-sizing: border-box;
 }
 
 
 .timeline::-webkit-scrollbar-track {
-    background: #f0f0f0;
+    background: var(--white);
     border-radius: 4px;
 }
 
 .timeline::-webkit-scrollbar-thumb {
-    background: #007bff;
+    background: var(--blue);
     border-radius: 4px;
 }
 
@@ -109,12 +109,12 @@
 }
 
 .haveLink.light:hover {
-    background-color: #cccccc;
+    background-color: var(--light-gray);
     cursor: url('/mouseCursorLight.png'), pointer;
 }
 
 .haveLink.dark:hover {
-    background-color: #b1b1b1;
+    background-color: var(--light-gray);
     cursor: url('/mouseCursorDark.png'), pointer;
 }
 
@@ -130,12 +130,12 @@
 .content h3 {
     font-size: 1.5rem;
     margin: 10px 0;
-    color: #333;
+    color: (--ththth)
 }
 
 .content p {
     font-size: 1rem;
-    color: #666;
+    color: var(--sxsxsx);
     overflow-wrap: break-word;
     white-space: normal;
     margin: 0;

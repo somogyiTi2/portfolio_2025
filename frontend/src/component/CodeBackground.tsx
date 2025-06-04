@@ -8,7 +8,7 @@ const terms: string[] = [
   "default", "/^[0-9A-Za-z-]+$/", "left.shift()", "var", "let", "useState()", "function",
   "const", "return", "if", "else", "while", "for", "switch", "case", "break", "continue",
   "try", "catch", "finally", "throw", "new", "delete", "typeof", "instanceof", "in", "var",
-  "let", "Date()", "//TODO", "document.", "+=", ".sort()", "find()", ".toFixed(4)", "git", "commit -m",
+  "let", "Date()", "/*TODO*/", "document.", "+=", ".sort()", "find()", ".toFixed(4)", "git", "commit -m",
   "cd ..", "npm i", "npm run dev", ".filter()", "(e)=>e+2", " float: right;", " opacity: 0.5;", "@media", "<h1>code</h1>", "#855f8d",
   "<a href='#me'>", "<hr/>", "<p/>", "Array.prototype.map()", "Array.prototype.reduce()", "setTimeout()", "setInterval()", "async/await",
   "Promise", "JSON.parse()", "JSON.stringify()", "null", "undefined", "useRef()", "useCallback()", "useMemo()", "props", "React.Fragment", "<div>",

@@ -8,11 +8,11 @@
 }
 
 .code-background.light {
-    background-color: #855f8d
+    background-color: var(--purple);
 }
 
 .code-background.dark {
-    background: #202020;
+    background: var(--black);
 }
 
 .term {

@@ -20,17 +20,17 @@
 }
 
 .slide.light {
-  background-color: rgb(228, 140, 9, 0.5);
-  color: rgb(0, 0, 0);
+  background-color: var(--orange-half-visible);
+  color: var(--black);
 }
 
 .slide.dark {
-  background-color: #5a5a5a6b;
-  color: white;
+  background-color: var(--lightgray-half-visible);
+  color: var(--white);
 }
 
 .slider-button {
-  color: white
+  color: var(--white);
 }
 
 /* A kép és szöveg maximális megjelenítése */

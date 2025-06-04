@@ -1,17 +1,35 @@
+:root {
+  --white: #f8f8f8;
+  --black: #1e1e1e;
+  --purple: #855f8d;
+  --purple-b:#b26fbf;
+  --blue: #007bff;
+  --light-gray: #ccc;
+  --lightgray-half-visible: #ccc3;
+  --sxsxsx:#666;
+  --ththth:#333;
+  --orange:#e48c09;
+  --orange-half-visible:#e48c0986;
+  --blueviolet:blueviolet;
+
+}
+
 body {
   margin: 0px
 }
 
 :root {
   transition: background-color 0.3s ease, color 0.3s ease;
-  background-color: #1e1e1e;
-  color: #f8f8f8;
+  background-color: var(--black);
+  color: var(--white);
 }
+
 :root.light {
-  background-color: #ffdfdf;
-  color: #3a3a3a;
+  background-color: var(--white);
+  color: var(--black);
 }
+
 :root.dark {
-  background-color: #1e1e1e;
-  color: #f8f8f8;
+  background-color: var(--black);
+  color: var(--white);
 }

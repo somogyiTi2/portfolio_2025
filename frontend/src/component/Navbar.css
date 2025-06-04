@@ -10,11 +10,11 @@ nav {
 }
 
 .nav.dark {
-    background-color: rgba(124, 124, 124, 0.137);
+    background-color: var(--lightgray-half-visible);
 }
 
 .nav.light {
-    background-color: rgba(71, 71, 71, 0.24);
+    background-color: var(--lightgray-half-visible);
 }
 
 .nav-header {
@@ -28,7 +28,7 @@ nav {
     border: none;
     font-size: 24px;
     cursor: pointer;
-    color: rgb(131, 131, 131);
+    color: var(--light-gray);
     display: none;
 }
 
@@ -42,14 +42,14 @@ nav {
 .nav a {
     margin: 0 12px;
     text-decoration: none;
-    color: rgb(131, 131, 131);
+    color: var(--light-gray);
     font-weight: 500;
     font-size: 16px;
     transition: color 0.2s ease;
 }
 
 .nav a:hover {
-    color: #0077ff;
+    color: var(--blue);
     font-size: 20px;
 }
 
@@ -71,7 +71,8 @@ nav {
     }
 
     .nav-links.open {
-        max-height: 500px; /* vagy elég nagy érték */
+        max-height: 500px;
+        /* vagy elég nagy érték */
     }
 
     .nav a {
